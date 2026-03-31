@@ -1,14 +1,15 @@
 package com.example.onboardingenergybox.dto;
 
 public record EnergyBoxDTO(
-        int packNumber,
+        Integer packNumber,
         String productionOrder,
-        int palletNumber,
-        int boxNumber,
-        int quantityMetersInBox,
-        float boxWeight,
-        boolean closed,
-        boolean printed,
+        Integer palletNumber,
+        Integer boxNumber,
+        Integer quantityMetersInBox,
+        Float boxWeight,
+        Boolean closed,
+        Boolean printed,
         String closedByUserName,
-        String userCreate
+        String userCreate,
+        String userEdit
 ) {}
