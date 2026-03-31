@@ -18,7 +18,7 @@ Antes de rodar a aplicação, você precisa configurar a conexão com o banco de
 spring.datasource.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
 spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=NOME_DO_SEU_BANCO;encrypt=true;trustServerCertificate=true;
 ```
-## ⚠️ Configurando a Autenticação do SQL Server (O problema da DLL)
+## ⚠️ Configurando a Autenticação do SQL Server
 
 Ao tentar conectar ao SQL Server, você pode se deparar com o seguinte erro no console:
 
@@ -33,6 +33,7 @@ Siga este passo a passo para configurar a DLL no IntelliJ IDEA:
 1. Baixar a DLL
 
     - Baixe o Microsoft JDBC Driver for SQL Server (versão equivalente à do seu projeto, ex: 13.2).
+        - https://learn.microsoft.com/pt-br/sql/connect/jdbc/release-notes-for-the-jdbc-driver?view=sql-server-ver17#132
 
     - Extraia o arquivo .zip baixado.
 
